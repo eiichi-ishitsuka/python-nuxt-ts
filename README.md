@@ -1,2 +1,2 @@
-# python-vue-ts
-Python + Flask + TypeScript + Vue.js on Docker
+# python-nuxt-ts
+Python + Flask + TypeScript + Nuxt.js on Docker
