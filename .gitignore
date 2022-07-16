@@ -1,11 +1,12 @@
-.npm
+.cache
 .env
 .env.test
-.cache
+.npm
+.nuxt
+.output
+.venv
 __pycache__
 coverage
-node_modules
 dist
-.nuxt
+node_modules
 frontend/public/js/app.js
-.output
