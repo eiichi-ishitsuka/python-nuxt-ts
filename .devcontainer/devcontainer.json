@@ -1,0 +1,26 @@
+{
+    "name": "python-vue-ts",
+    "dockerComposeFile": ["docker-compose.yml"],
+    "service": "dev",
+    "workspaceFolder": "/app",
+    "shutdownAction": "stopCompose",
+    "extensions": [
+		"ms-azuretools.vscode-docker",
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+        "njpwerner.autodocstring",
+        "mosapride.zenkaku",
+        "octref.vetur",
+        "streetsidesoftware.code-spell-checker"
+    ],
+    "settings": {
+        "python.linting.flake8Enabled": true,
+        "python.formatting.provider": "black",
+        "[python]": {
+            "editor.codeActionsOnSave": {
+                "source.organizeImports": true
+            }
+        },
+    },
+    "forwardPorts": [9000, 3000]
+}

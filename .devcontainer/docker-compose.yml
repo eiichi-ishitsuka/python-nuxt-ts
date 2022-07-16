@@ -1,0 +1,19 @@
+version: "3"
+
+services:
+  dev:
+    container_name: dev-container
+    build: ../dev
+    ports:
+      - "9000:9000"
+    volumes:
+      - "../:/app"
+    command: sleep infinity
+  frontend:
+    container_name: frontend-container
+    build: ../frontend
+    ports:
+      - "3000:3000"
+    volumes:
+      - "../frontend:/app"
+    command: sh -c "cd /app && npm run dev"
